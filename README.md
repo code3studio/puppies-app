@@ -57,3 +57,56 @@ npx nx serve client
 The frontend will be available at: `http://localhost:4200`
 
 ---
+
+## API Endpoints
+
+### Get All Puppies (with optional filters)
+
+```http
+GET /api/puppies?gender=male
+```
+
+### Get Single Puppy
+
+```http
+GET /api/puppies/:refId
+```
+
+### Create a Puppy
+
+```http
+POST /api/puppies
+Content-Type: application/json
+{
+  "name": "Buddy",
+  "breed": "Golden Retriever",
+  "color": "Golden",
+  "location": "Naples",
+  "gender": "Male",
+  "dob": "2023-06-15",
+  "image": "url-to-image",
+  "contact": "123-456-7890"
+}
+```
+
+To add a puppy using the frontend, navigate to the application, fill in the puppy details in the provided form, and submit.
+
+### Update a Puppy
+
+```http
+PUT /api/puppies/:refId
+Content-Type: application/json
+{
+  "name": "Updated Name"
+}
+```
+
+### Delete a Puppy
+
+```http
+DELETE /api/puppies/:refId
+```
+
+---
+
+
