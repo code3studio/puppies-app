@@ -1,0 +1,109 @@
+.puppy-detail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  color: #404041;
+  background-color: #f9f9f9;
+
+  .puppy-image {
+    flex: 1;
+    max-width: 50%;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .puppy-info {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+    background: white;
+
+    .puppy-bio {
+      p {
+        margin: 10px 0;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #333;
+      }
+    }
+
+    .puppy-actions {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+
+      button {
+        padding: 12px 20px;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &.info-btn, &.call-btn {
+          flex: 1;
+        }
+
+        &.info-btn {
+          background-color: #e76f51;
+          color: white;
+        }
+
+        &.call-btn {
+          background-color: #f4a261;
+          color: white;
+        }
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .puppy-detail {
+    .puppy-image {
+      max-width: 100%;
+    }
+
+    .puppy-info {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .puppy-detail {
+    .puppy-image {
+      max-width: 100%;
+    }
+
+    .puppy-info {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .puppy-detail {
+    flex-direction: column;
+
+    .puppy-info {
+      padding: 10px;
+    }
+
+    .puppy-actions {
+      flex-direction: column;
+      gap: 15px;
+
+      button {
+        width: 100%;
+      }
+    }
+  }
+}

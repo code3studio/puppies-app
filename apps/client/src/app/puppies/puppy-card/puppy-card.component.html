@@ -1,0 +1,34 @@
+<div [routerLink]="['/puppy', puppy.refId]" class="puppy-card">
+  <img [src]="puppy.image" alt="{{ puppy.name }}" class="puppy-image" />
+  
+  <div class="puppy-details">
+    <h2>{{ puppy.name }}</h2>
+    <h3>{{ puppy.breed }}</h3>
+
+    <div class="info">
+        <div class="info-row">
+            <div class="info-item">
+              GENDER: <span class="info-value">{{ puppy.gender }}</span>
+            </div>
+            <div class="info-item">
+              REFERENCE ID: <span class="info-value">{{ puppy.refId }}</span>
+            </div>
+        </div>
+        <div class="info-row">
+            <div class="info-item">
+              BIRTHDAY: <span class="info-value">{{ puppy.dob | date: 'MM/dd/yyyy' }}</span>
+            </div>
+            <div class="info-item">
+              LOCATION: <span class="info-value">{{ puppy.location }}</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-button">
+      <i class="fas fa-phone-alt"></i>
+      {{ puppy.contact }}
+    </div>
+
+    <div class="view-button">VIEW PUPPY</div>
+  </div>
+</div>

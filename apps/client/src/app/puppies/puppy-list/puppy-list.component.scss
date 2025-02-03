@@ -1,0 +1,40 @@
+.main-content {
+  display: flex;
+  max-width: 1140px;
+  margin: 0 auto;
+  gap: 50px;
+}
+
+.sidebar {
+  width: 250px;
+  flex-shrink: 0;
+}
+
+.puppy-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.puppy-card {
+  box-sizing: border-box;
+}
+
+.no-puppies {
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .puppy-list {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}

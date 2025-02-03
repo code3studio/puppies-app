@@ -1,0 +1,23 @@
+<div class="puppy-detail">
+  <div class="puppy-image">
+    <img [src]="puppy?.image" [alt]="puppy?.name" />
+  </div>
+
+  <div class="puppy-info">
+
+    <div class="puppy-bio">
+      <p><strong>Name:</strong> {{ puppy?.name }}</p>
+      <p><strong>Breed:</strong> {{ puppy?.breed }}</p>
+      <p><strong>Color:</strong> {{ puppy?.color }}</p>
+      <p><strong>Location:</strong> {{ puppy?.location }}</p>
+      <p><strong>Gender:</strong> {{ puppy?.gender }}</p>
+      <p><strong>D.O.B:</strong> {{ puppy?.dob }}</p>
+      <p><strong>Ref ID:</strong> {{ puppy?.refId }}</p>
+    </div>
+
+    <div class="puppy-actions">
+      <button class="info-btn">request more info</button>
+      <button class="call-btn">call to reserve</button>
+    </div>
+  </div>
+</div>

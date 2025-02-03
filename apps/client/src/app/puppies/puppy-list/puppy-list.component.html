@@ -1,0 +1,13 @@
+<div class="main-content">
+  <aside class="sidebar">
+    <app-puppy-filters (filterChanged)="applyFilters($event)"></app-puppy-filters>
+  </aside>
+
+  <section class="puppy-list">
+    <app-puppy-card *ngFor="let puppy of puppies" [puppy]="puppy"></app-puppy-card>
+  </section>
+
+  <div *ngIf="puppies.length === 0" class="no-puppies">
+    No puppies found matching the selected filters.
+  </div>
+</div>

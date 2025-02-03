@@ -1,0 +1,73 @@
+.puppy-filters {
+  width: 100%;
+  padding: 16px;
+
+  .title {
+    font-size: 38px;
+    font-weight: bold;
+    color: rgb(33, 37, 41);
+  }
+
+  .description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .filter-group {
+    margin-bottom: 16px;
+
+    label {
+      display: block;
+      font-size: 14px;
+      font-weight: bold;
+      color: #34495e;
+      margin-bottom: 4px;
+    }
+
+    select {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      font-family: 'Gotham, sans-serif';
+      font-size: 16px;
+      margin-bottom: 16px;
+      font-weight: 400;
+      background-color: rgb(255, 255, 255);
+      color: rgb(73, 80, 87);
+      cursor: pointer;
+    }
+
+    select:active, select:focus {
+      outline: none;
+      box-shadow: rgba(193, 233, 235, 0.25), 0px 0px 0px 3.2px;
+    }
+
+    option {
+      background: #fff;
+      color: #333;
+      padding: 10px;
+    }
+
+    option:hover {
+      background-color: #d35400;
+    }
+  }
+
+  .clear-filters {
+    background: none;
+    border: 2px solid #d35400;
+    color: #d35400;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+
+    &:hover {
+      background: #d35400;
+      color: #fff;
+    }
+  }
+}

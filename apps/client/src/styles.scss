@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Gotham";
+  src: url("/assets/fonts/Gotham-Font/GothamMedium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("/assets/fonts/Gotham-Font/GothamBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+    background-color: rgb(241, 241, 241);
+  font-family: "Gotham", sans-serif;
+}
+
+.container {
+    width: 1140px;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: rgb(241, 241, 241);
+    padding: 0 15px;
+}

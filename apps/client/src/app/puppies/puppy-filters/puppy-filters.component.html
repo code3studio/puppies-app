@@ -1,0 +1,47 @@
+<div class="puppy-filters">
+  <h2 class="title">PUPPIES FOR SALE</h2>
+  <p class="description">
+    Visit our state-of-the-art locations! We provide you and your family with a fun, hands-on approach to learning about your pets and their required needs.
+  </p>
+  
+  <div class="filter-group">
+    <div class="filter-group">
+    <label for="petType">Pet Type</label>
+    <select id="petType" [(ngModel)]="filters.petType" (change)="updateFilters()">
+      <option value="">All</option>
+    </select>
+  </div>
+
+  <div class="filter-group">
+    <label for="status">Status</label>
+    <select id="status" [(ngModel)]="filters.status" (change)="updateFilters()">
+      <option value="">All</option>
+    </select>
+  </div>
+
+  <div class="filter-group">
+    <label for="location">Location</label>
+    <select id="location" [(ngModel)]="filters.location" (change)="updateFilters()">
+      <option value="">All</option>
+    </select>
+  </div>
+
+  <div class="filter-group">
+    <label for="breed">Breed</label>
+    <select id="breed" [(ngModel)]="filters.breed" (change)="updateFilters()">
+      <option value="">All</option>
+    </select>
+  </div>
+
+  <div class="filter-group">
+    <label for="gender">Gender</label>
+    <select id="gender" [(ngModel)]="filters.gender" (change)="updateFilters()">
+      <option value="">All</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+    </select>
+  </div>
+
+  <button class="clear-filters" (click)="clearFilters()">Clear Filters</button>
+  </div>
+</div>
